@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Centro Gravitacional</title>
+    <link rel="shortcut icon" href="assets/maca.png" type="image/x-icon">
     <script src="script/script.js" defer></script>
 </head>
 <body>
@@ -19,15 +20,15 @@
             <p>é o ponto onde pode ser considerada a aplicação da força de gravidade de todo o corpo formado por um conjunto de partículas.</p>
             <input type="button" value="Conhecer mais" class="saber_mais">
         </div>
-        <img src="assets/22745545_i0ox_ffi4_211224 [Convertido].svg" alt="gravidade">
+        <img src="assets/Newton ea maça.svg" alt="gravidade">
     </header>
     <article>
         <div class="card">
-            <img src="assets/calculadora (1).png" alt="calculos">
+            <img src="assets/calculadora.png" alt="calculos" id="calc">
             <p>Cálculos</p>
         </div>
         <div class="card">
-            <img src="assets/cientista (1).png" alt="Teoria">
+            <img src="assets/cientista.png" alt="Teoria" id="teory">
             <p>Teoria</p>
         </div>
         <a href="https://drive.google.com/drive/folders/1BssZgfuIwdr48EVrfHnYMiy1X-1xoE7U?usp=drive_link" target="_blank" rel="noopener noreferrer">
@@ -46,10 +47,27 @@
     </article>
     <!-- end header -->
     <main>
-        <h1>Oque e centro de massa ?</h1>
-        <p>O centro de massa é uma posição definida relativa a um objeto ou sistema de objetos. É a posição média de todas as partes do sistema, ponderada de acordo com a massa de cada objeto. <br>
-        Para objetos rígidos simples com densidade uniforme, o centro de massaestá localizado no centroide. Por exemplo, o centro de massa de um discouniforme está em seu centro. Às vezes, o centro de massa não está emnenhum lugar do objeto. O centro de massa de um anel, por exemplo, estálocalizado em seu centro, onde não há nenhuma material.</p>
-        <img src="assets/647bde8dd48e4d0d904233ee1adf9ee6a7931961.svg" alt="exemplo">
+        <div class="article1">
+            <h1>Oque e centro de massa ? &#127757;</h1>
+            <p>O centro de massa é uma posição definida relativa a um objeto ou sistema de objetos. É a posição média de todas as partes do sistema, ponderada de acordo com a massa de cada objeto. <br>
+            Para objetos rígidos simples com densidade uniforme, o centro de massaestá localizado no centroide. Por exemplo, o centro de massa de um discouniforme está em seu centro. Às vezes, o centro de massa não está emnenhum lugar do objeto. O centro de massa de um anel, por exemplo, estálocalizado em seu centro, onde não há nenhuma material.</p>
+            <img class="desenho" src="assets/imagens-exemplo.svg" alt="exemplo">
+            <p>Para formas mais complicadas, precisamos de uma definição matemática mais geral do centro de massa: é a posição única na qual a soma dos vetores de posição ponderados de todas as partes do sistema é igual a zero</p>
+        </div>
+        <div class="article2">
+            <h1>O que é útil sobre o centro de massa ?</h1>
+            <p>A coisa interessante sobre o centro de massa de um objeto ou um sistema é que é o ponto onde qualquer força uniforme atua sobre o objeto. Isso é útil porque torna mais fácil resolver problemas de mecânica onde temos que descrever o movimento de objetos de formato estranho e sistemas complicados. <br>
+            Para efeitos de cálculo, podemos tratar um objeto de formato estranhocomo se toda sua massa estivesse concentrada em um objeto minúsculolocalizado no centro de massa. Às vezes chamamos esse objeto imagináriode ponto de massa. <br>
+            Se empurrarmos um objeto rígido no seu centro de massa, então o objeto semoverá sempre como se fosse um ponto de massa. Ele não girará em torno denenhum eixo, independente da sua forma real. Se o objeto for submetido auma força desequilibrada em algum outro ponto, aí ele começará a girarsobre o centro de massa.</p>
+        </div>
+        <div>
+            <h1>Como obter o centro de massa de qualquer objeto ou sistema ? &#128208;</h1>
+            <p>Em geral, o centro de massa pode ser encontrado pela soma vetorial dos vetores de posição ponderados que apontam para o centro de massa de cada objeto em um sistema. Uma técnica rápida que nos permite evitar o uso da aritmética vetorial é encontrar o centro de massa separadamente para componentes ao longo de cada eixo, ou seja: <br> </p>
+            <p class="espaço">Para posições de objeto ao longo do eixo x:</p>
+            <img src="assets/formula x.png" alt="formula eixo x">
+            <p class="espaço">E da mesma forma para o eixo y:</p>
+            <img src="assets/formula y.png" alt="formula eixo y">
+        </div>
     </main>
 </body>
 </html>
