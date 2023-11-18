@@ -27,6 +27,7 @@ header {
 header > img {
     max-width: 330px;
     margin-left: 20%;
+    animation: entrada .5s linear;
 }
 
 nav {
@@ -45,6 +46,7 @@ a {
 .content_header {
     margin-left: 100px;
     max-width: 430px;
+    animation: entrada .5s linear;
 }
 
 .content_header > h1 {
@@ -95,6 +97,7 @@ article {
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+    animation: entrada .5s linear;
 }
 
 .card > P {
@@ -131,6 +134,18 @@ main > p {
     color: white;
     font-family: var(--font-poppins);
 
+}
+
+@keyframes entrada {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(30px);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 700px) {
