@@ -1,0 +1,11 @@
+:root {
+    --font-family-primary: 'comfortaa', cursive;
+    --font-size-primary: 0.8rem;
+    --line-height-primary: 1.2rem;
+    --primary-color: #06113C;
+    --secundary-color: #FF8C32;
+    --terceary-color: #DDDDDD;
+    --spacing-sm: 8px;
+    --spacing-lg: calc(var(--spacing-sm)*2)
+    --bg-primary: linear-gradient(45deg, var(--primary-color), var(--tertiary-color));
+}
