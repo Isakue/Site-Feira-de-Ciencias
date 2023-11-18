@@ -17,14 +17,6 @@
     box-sizing: border-box;
 }
 
-.menu_ {
-    display: none;
-}
-
-.span {
-    display: none;
-}
-
 header {
     background-color: var(--color02);
     height: 370px;
@@ -41,17 +33,7 @@ header > img {
 nav {
     background-color: var(--color02);
     display: flex;
-    justify-content: center;
-    border-bottom: solid 2px var(--color03);
-}
-
-nav a {
-    text-decoration: none orange 2px;
-}
-
-nav a:hover {
-    text-decoration: underline orange 5px;
-    transition: .5s;
+    justify-content: right;
 }
 
 a {
@@ -145,35 +127,16 @@ article {
 main {
     max-width: 800px;
     margin: auto;
+
 }
 
-main div {
-    max-width: 800px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-main  h1 {
-    text-align: left;
+main > h1 {
     margin: 15px;
     font-family: var(--font-titulo);
-}
-
-main  p {
     font-size: 20px;
     font-family: var(--font-poppins);
     text-align: justify;
     
-}
-
-.espaço {
-    margin: 20px;
-}
-
-.desenho {
-    max-width: 500px;
 }
 
 .cards {
@@ -194,12 +157,6 @@ main  p {
 
 }
 
-footer {
-    text-align: center;
-    color: white;
-    background-color: black;
-}
-
 @keyframes entrada {
     0% {
         transform: translateY(-30px);
@@ -213,57 +170,8 @@ footer {
 }
 
 @media (max-width: 700px) {
-    nav {
-        display: none;
-    }
-
-    .span {
-        display: block;
-    }
-
-    .menu {
-        display: block;
-        color: white;
-        font-weight: 600;
-        margin-right: 30px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        padding: 5px;
-        border-radius: 10px;
-        background-color: #981ceb6c;
-        cursor: pointer;
-    }
-    
-    .menu_ {
-        z-index: 1;
-        display: none;
-        flex-direction: column;
-        background-color: var(--color03);
-        position: absolute;
-        position: fixed;
-        box-shadow: 1 1 1 10 black;
-        height: 100vh;
-        width: 80%;
-        right: 0px;
-        top: 0px;
-    }
-
-    .menu_ span {
-        color: white;
-        margin: 10px;
-        cursor: pointer;
-    }
-
-    .menu_ a {
-        font-size: 20px;
-        margin-left: 50px;
-        background-color: #ffffff45;
-        border-radius: 20px;
-    }
-
     .content_header {
-        margin: auto;
+        margin-left: 5px;
     }
 
     .cardDesktop {
@@ -277,22 +185,6 @@ footer {
     main {
         max-width: 400px;
     }
-
-    @keyframes entrada_menu {
-        0% {
-            right: -700px;
-        }
-        100% {
-            right: 0px;
-        }
-    }
-    
-    @keyframes saida_menu {
-        0% {
-            right: 0px;
-        }
-        100% {
-            right: -700px;
-        }
-    }
 }
+
+
