@@ -33,7 +33,24 @@ header > img {
 nav {
     background-color: var(--color02);
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    border-bottom: solid 2px var(--color03)
+}
+
+nav a {
+    text-decoration: none orange 5px;
+}
+
+nav a:hover {
+    text-decoration: underline orange 5px;
+}
+
+.menu_open {
+    display: none;
+}
+
+.span {
+    display: none;
 }
 
 a {
@@ -127,16 +144,24 @@ article {
 main {
     max-width: 800px;
     margin: auto;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-main > h1 {
+main h1 {
     margin: 15px;
     font-family: var(--font-titulo);
-    font-size: 20px;
+}
+
+main p {
     font-family: var(--font-poppins);
     text-align: justify;
-    
+    font-size: 20px;
+}
+
+.desenho {
+    max-width: 400px;
 }
 
 .cards {
@@ -170,6 +195,24 @@ main > h1 {
     }
 }
 
+@keyframes entrada_menu {
+    0% {
+        right: -800px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes saida_menu {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -800px;
+    }
+}
+
 @media (max-width: 700px) {
     .content_header {
         margin-left: 5px;
@@ -177,6 +220,42 @@ main > h1 {
 
     .cardDesktop {
         display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .span {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: white;
+        background-color: #981ceb64;
+        border-radius: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .menu_open {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        position: fixed;
+        background-color: var(--color03);
+        height: 100vh;
+        width: 80%;
+        right: 0px;
+    }
+
+    .fechar {
+        color: white;
+        margin: 20px;
+        cursor: pointer;
     }
 
     header > img {
@@ -196,9 +275,12 @@ main > h1 {
  }
 
  h2{
-    margin-left: 500px;
+    text-align: center;
+    margin-top: 15px;
     font-variant: small-caps;
-    color:#002857;
+    color: var(--color02);
+    font-family: var(--font-titulo);
+
  }
 
 

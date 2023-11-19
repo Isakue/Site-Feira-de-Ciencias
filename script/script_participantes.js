@@ -1,5 +1,5 @@
 let menu = document.querySelector('.menu')
-let menu_open = document.querySelector('.menu_')
+let menu_open = document.querySelector('.menu_open')
 
 let fechar = document.querySelector('.fechar')
 

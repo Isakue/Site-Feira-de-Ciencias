@@ -3,8 +3,8 @@ let nav = document.querySelector('nav')
 let header = document.querySelector('header')
 let article = document.querySelector('article')
 
-let menu = document.querySelector('.menu')
-let menu_open = document.querySelector('.menu_')
+let menu = document.querySelector('.span')
+let menu_open = document.querySelector('.menu_open')
 
 let fechar = document.querySelector('.fechar')
 
