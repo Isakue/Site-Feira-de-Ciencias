@@ -143,6 +143,7 @@ main > h1 {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
+    text-shadow: 3px 3px 1px black;
 }
 
 .card_profile {
@@ -186,5 +187,18 @@ main > h1 {
         max-width: 400px;
     }
 }
+
+.img_profile {
+     max-width: 85px;
+     margin-left: 40px;
+     border: 2px inset #000000 ;
+     
+ }
+
+ h2{
+    margin-left: 500px;
+    font-variant: small-caps;
+    color:#002857;
+ }
 
 
