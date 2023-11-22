@@ -284,3 +284,9 @@ main p {
  }
 
 
+footer {
+    color: white;
+    text-align: center;
+    background-color: #000000;
+    font-family: var(--font-poppins);
+}
