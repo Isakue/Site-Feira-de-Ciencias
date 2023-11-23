@@ -9,6 +9,8 @@
     --color03: #002857;
     --color04: #1A26EB;
     --color05: #3DB3EB;
+    --colorMode: white;
+    --colorModeDark: #282828;
 }
 
 * {
@@ -45,6 +47,19 @@ nav a:hover {
     text-decoration: underline orange 5px;
 }
 
+.escuro {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    cursor: pointer;
+    color: var(--colorMode);
+}
+
+.escuro:hover {
+    color: var(--colorModeDark);
+    transition: .5s;
+}
+
 .menu_open {
     display: none;
 }
@@ -55,7 +70,7 @@ nav a:hover {
 
 a {
     margin: 10px;
-    color: white;
+    color: var(--colorMode);
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
@@ -68,13 +83,13 @@ a {
 
 .content_header > h1 {
     font-size: 50px;
-    color: white;
+    color: var(--colorMode);
     font-family: var(--font-titulo);
 }
 
 .content_header > p {
     margin-top: 10px;
-    color: white;
+    color: var(--colorMode);
     font-family: var(--font-poppins);
 }
 
@@ -85,12 +100,12 @@ a {
     margin-top: 20px;
     cursor: pointer;
     background-color: var(--color01);
-    color: white;
+    color: var(--colorMode);
     width: 300px;
 }
 
 .content_header > input:hover {
-    background-color: white;
+    background-color: var(--colorMode);
     color: var(--color01);
     transition: .5s;
 }
@@ -132,13 +147,17 @@ article {
 }
 
 .card P {
-    color: white;
+    color: var(--colorMode);
     font-family: var(--font-poppins);
 }
 
 .cardDesktop  P {
-    color: white;
+    color: var(--colorMode);
     font-family: var(--font-poppins);
+}
+
+body {
+    background-color: var(--colorMode);
 }
 
 main {
@@ -152,12 +171,14 @@ main {
 main h1 {
     margin: 15px;
     font-family: var(--font-titulo);
+    color: var(--colorModeDark);
 }
 
 main p {
     font-family: var(--font-poppins);
     text-align: justify;
     font-size: 20px;
+    color: var(--colorModeDark);
 }
 
 .desenho {
@@ -178,7 +199,7 @@ main p {
     margin: 20px;
     border-radius: 20px;
     background-color: var(--color02);
-    color: white;
+    color: var(--colorMode);
     font-family: var(--font-poppins);
 
 }
@@ -234,7 +255,7 @@ main p {
         position: absolute;
         right: 20px;
         top: 20px;
-        color: white;
+        color: var(--colorMode);
         background-color: #981ceb64;
         border-radius: 20px;
         padding: 10px;
@@ -253,7 +274,7 @@ main p {
     }
 
     .fechar {
-        color: white;
+        color: var(--colorMode);
         margin: 20px;
         cursor: pointer;
     }
@@ -285,8 +306,8 @@ main p {
 
 
 footer {
-    color: white;
+    color: var(--colorMode);
     text-align: center;
-    background-color: #000000;
+    background-color: var(--colorModeDark);
     font-family: var(--font-poppins);
 }

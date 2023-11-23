@@ -3,6 +3,8 @@ let nav = document.querySelector('nav')
 let header = document.querySelector('header')
 let article = document.querySelector('article')
 
+let darkModeActive = document.querySelector('.escuro')
+
 let menu = document.querySelector('.span')
 let menu_open = document.querySelector('.menu_open')
 
@@ -20,12 +22,16 @@ let articleWidth = +window.getComputedStyle(article).height.replace('px' , '')
 let part1Height = +window.getComputedStyle(part1).height.replace('px' , '')
 let part2Height = +window.getComputedStyle(part2).height.replace('px' , '')
 
+var mode = getComputedStyle(document.documentElement).getPropertyValue('--colorMode'); 
+
 saber_mais.addEventListener('click' , scrollSaberMais)
 teoria.addEventListener('click' , scrollTeoria)
 calculos.addEventListener('click' , scrollCalculos)
 
 fechar.addEventListener('click' , closedMenu)
 menu.addEventListener('click' , openMenu)
+
+darkModeActive.addEventListener('click' , darkMode)
 
 const heightHeader = navWidth + headerWidth + articleWidth
 const downTeoria = heightHeader
@@ -53,4 +59,21 @@ function closedMenu() {
     setTimeout(() => {
         menu_open.style.display = 'none'
     } , 495)
+}
+
+function darkMode() {
+    console.log(mode)
+
+    if(mode == 'white' ) {
+        document.body.style.setProperty('--colorMode', '#282828');
+        document.body.style.setProperty('--colorModeDark', 'white');
+        mode = '#282828'
+        return
+    }
+    if(mode == '#282828') {
+        document.body.style.setProperty('--colorMode', 'white');
+        document.body.style.setProperty('--colorModeDark', '#282828');
+        mode = 'white'
+        return
+    }
 }
